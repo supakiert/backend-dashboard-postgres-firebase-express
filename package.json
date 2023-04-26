@@ -10,7 +10,6 @@
     "seed:up": "npx sequelize-cli db:seed:all",
     "seed:undo": "npx sequelize-cli db:seed:undo",
     "seed:undo:all": "npx sequelize-cli db:seed:undo:all"
-
   },
   "author": "",
   "license": "ISC",
@@ -24,5 +23,8 @@
     "nodemon": "^2.0.3",
     "postgresql": "^0.0.1"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "sequelize-cli": "^6.6.0"
+  }
 }
