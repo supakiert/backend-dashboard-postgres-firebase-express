@@ -8,7 +8,7 @@ const pool = new Pool({
 })
 
 const getData = (request, response) => {
-    pool.query('SELECT * FROM "Farmers"', (error, results) => {
+    pool.query('SELECT * FROM "Config"', (error, results) => {
         if (error) {
             throw error
         }
