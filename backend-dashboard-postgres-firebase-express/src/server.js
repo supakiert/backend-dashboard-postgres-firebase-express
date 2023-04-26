@@ -19,7 +19,7 @@ getData_Pimai_D.on(
   "value",
   function (snapshot) {
     var json = JSON.stringify(snapshot.val());
-    fs.writeFile("./raw_data/Pimai_D/FB-ADN-Pimai_D_20232303.json", json, 'utf8', function (err) {
+    fs.writeFile("./raw_data/Pimai_D/FB-ADN-WF_20232303.json", json, 'utf8', function (err) {
       if (err) {
           console.log("An error occured while writing JSON Object to File.");
           return console.log(err);
@@ -38,7 +38,7 @@ getData_Sakon_K.on(
   "value",
   function (snapshot) {
     var json = JSON.stringify(snapshot.val());
-    fs.writeFile("./raw_data/Sakon_K/FB-ADN-Sakon_K_20232303.json", json, 'utf8', function (err) {
+    fs.writeFile("./raw_data/Sakon_K/FB-ADN-WF_20232303.json", json, 'utf8', function (err) {
       if (err) {
           console.log("An error occured while writing JSON Object to File.");
           return console.log(err);
