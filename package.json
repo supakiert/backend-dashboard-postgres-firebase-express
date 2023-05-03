@@ -10,7 +10,6 @@
     "seed:up": "npx sequelize-cli db:seed:all",
     "seed:undo": "npx sequelize-cli db:seed:undo",
     "seed:undo:all": "npx sequelize-cli db:seed:undo:all"
-
   },
   "author": "",
   "license": "ISC",
