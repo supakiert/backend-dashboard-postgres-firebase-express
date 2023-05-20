@@ -7,7 +7,7 @@ const pool = new Pool({
     port: 5432,
 })
 
-const getData = (request, response) => {
+const getConfig = (request, response) => {
     pool.query('SELECT * FROM "Config"', (error, results) => {
         if (error) {
             throw error
@@ -16,6 +16,17 @@ const getData = (request, response) => {
     })
 }
 
+const getDalyLog = (request, response) => {
+    pool.query('SELECT * FROM "DalyLog"', (error, results) => {
+        if (error) {
+            throw error
+        }
+        response.status(200).json(results.rows)
+    })
+}
+
+
 module.exports = {
-    getData
+  getConfig,
+  getDalyLog
 }
