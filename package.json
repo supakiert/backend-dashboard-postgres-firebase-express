@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node src/server.js & node postgres/index.js",
+    "start": "node src/server.js & node postgres/index.js & node postgres/test.js",
     "dev": "nodemon src/server.js",
     "migrate:up": "npx sequelize-cli db:migrate",
     "migrate:undo": "npx sequelize-cli db:migrate:undo",
@@ -20,6 +20,8 @@
     "express": "^4.17.1",
     "firebase": "^8.2.0",
     "firebase-admin": "^8.12.1",
+    "node-cron": "^3.0.2",
+    "node-mailer": "^0.1.1",
     "nodemon": "^2.0.3",
     "postgresql": "^0.0.1"
   },

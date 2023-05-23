@@ -4,9 +4,6 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('DalyLog', {
       Year: {
-        allowNull: false,
-        primaryKey: true,
-        autoIncrement: false,
         type: Sequelize.STRING,
       },
       Month: {
